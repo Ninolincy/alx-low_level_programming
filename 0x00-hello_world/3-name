@@ -1,0 +1,2 @@
+#!/bin/bash
+gccc $CFILE -o cisfun
