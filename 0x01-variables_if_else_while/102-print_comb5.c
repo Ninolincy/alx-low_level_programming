@@ -19,9 +19,11 @@ int main(void)
 			putchar(' ');
 			putchar((d / 10) + '0');
 			putchar((d % 10) + '0');
-					if (c == 98 && d == 99)
+					if (c != 98)
+					{
 					putchar(',');
 					putchar(' ');
+					}
 		}
 	}
 					putchar('\n');
