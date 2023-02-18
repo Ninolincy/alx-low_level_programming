@@ -12,7 +12,7 @@ int main(void)
 
 	for (c = 0; c <= 98; c++)
 	{
-		for (d = c + 1; d <= 99)
+		for (d = c + 1; d <= 99;)
 		{
 			putchar((c / 10) + '0');
 			putchar((c % 10) + '0');
