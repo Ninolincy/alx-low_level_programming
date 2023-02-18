@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
@@ -19,11 +21,9 @@ int main(void)
 			putchar(' ');
 			putchar((d / 10) + '0');
 			putchar((d % 10) + '0');
-					if (c != 98)
-					{
+					if (c ==98 && d == 99)
 					putchar(',');
 					putchar(' ');
-					}
 		}
 	}
 					putchar('\n');
