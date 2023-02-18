@@ -1,30 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: 0 (Success)
+ *main - Entry point
  *
+ *Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int c, d;
+	int first_num, sec_num;
 
-	for (c = 0; c <= 98; c++)
+	for (first_num = 0; first_num <= 99; first_num++)
 	{
-		for (d = c + 1; d <= 99; d++)
+		for (sec_num = first_num + 1; sec_num <= 99; sec_num++)
 		{
-			putchar((c / 10) + '0');
-			putchar((c % 10) + '0');
+			putchar((first_num / 10) + '0');
+			putchar((first_num % 10) + '0');
 			putchar(' ');
-			putchar((d / 10) + '0');
-			putchar((d % 10) + '0');
-					if (c != 98)
-					putchar(',');
-					putchar(' ');
+			putchar((sec_num / 10) + '0');
+			putchar((sec_num % 10) + '0');
+
+			if (first_num != 98)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-					putchar('\n');
-					return (0);
+	putchar('\n');
+	return (0);
 }
-
