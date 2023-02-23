@@ -7,7 +7,6 @@
 
 int main(void)
 {
-	int i = 0;
 	long int j = 1;
 	long int k = 2;
 	long int new_value;
