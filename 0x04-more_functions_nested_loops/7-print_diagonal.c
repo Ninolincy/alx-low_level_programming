@@ -18,9 +18,15 @@ void print_diagonal(int n)
 		{
 			for (x = 0; x < n; x++)
 			{
-				_putchar(32);
+				if (x == y)
+				{
+					_putchar('\\');
+				}
+				else
+				{
+					_putchar(' ');
+				}
 			}
-			_putchar(92);
 			_putchar('\n');
 		}
 }
