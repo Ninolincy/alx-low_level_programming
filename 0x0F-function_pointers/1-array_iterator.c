@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * array_iterator - Executes a function given as a parameter on each element of an array
+ * array_iterator - Executes a function given
+ * as a parameter on each element of an array
  * @array: Array
  * @size: Size of element to print
  * @action: Pointer to the function
@@ -12,6 +13,7 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i;
+
 	if (array == NULL || action == NULL)
 		return;
 
