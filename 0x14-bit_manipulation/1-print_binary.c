@@ -14,10 +14,9 @@ void print_binary(unsigned long int n)
 	unsigned long int set;
 
 	/*bits of unsigned int is 64 in most systems*/
-	for (b = 63; b>= 0; b--)
+	for (b = 63; b >= 0; b--)
 	{
 		set = n >> b;
-		
 		if (set & 1)
 			x++;
 		if (x)
