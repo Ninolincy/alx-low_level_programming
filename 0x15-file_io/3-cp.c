@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	{
 		if (dst == -1 || write(dst, buff, rd_bytes) == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2])
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 				exit(99);
 		}
 	}
